@@ -4,12 +4,11 @@
 Main Goal is to find the most occuring time zones in the dataset
 
 """
-
 import numpy as np
 import pandas as pd
 import datetime
 import json
-path = 'C:/Users/barak/OneDrive/Documents/python/Chapter_14/USA_Gov/bitly_usagov/example.txt'
+path = 'C:/Users/barak/OneDrive/Documents/python/Chapter 14/USA_GOV/bitly_usagov/example.txt'
 records = [json.loads(line)for line in open(path)]
 records[0]
 time_zones = [rec['tz'] for rec in records if 'tz' in rec]
